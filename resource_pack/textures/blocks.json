@@ -1,0 +1,8 @@
+{
+  "namespace": "lucky",
+  "blocks": {
+    "lucky_block": {
+      "brightness_gamma": 1
+    }
+  }
+}
