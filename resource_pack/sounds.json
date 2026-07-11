@@ -1,0 +1,21 @@
+{
+  "format_version": "1.14.0",
+  "sounds": {
+    "random.levelup": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/levelup"
+        }
+      ]
+    },
+    "random.explode": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/explosion"
+        }
+      ]
+    }
+  }
+}
