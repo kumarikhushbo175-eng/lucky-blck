@@ -1,0 +1,98 @@
+{
+  "format_version": "1.16.100",
+  
+  "lucky:reward_diamonds": {
+    "sequence": [
+      {
+        "run_command": "loot spawn ~ ~ ~ loot \"loot_tables/lucky_block_rewards\""
+      },
+      {
+        "run_command": "particle minecraft:end_rod ~ ~0.5 ~"
+      },
+      {
+        "run_command": "playsound random.levelup @s"
+      }
+    ]
+  },
+
+  "lucky:reward_enchanted_item": {
+    "sequence": [
+      {
+        "run_command": "give @s diamond_sword 1 0 {ench:[{id:9,lvl:3},{id:34,lvl:1}]}"
+      },
+      {
+        "run_command": "particle minecraft:enchanting_table_particle ~ ~0.5 ~"
+      },
+      {
+        "run_command": "playsound random.levelup @s"
+      }
+    ]
+  },
+
+  "lucky:reward_potion_effect": {
+    "sequence": [
+      {
+        "run_command": "effect @s strength 30 2"
+      },
+      {
+        "run_command": "effect @s speed 30 1"
+      },
+      {
+        "run_command": "particle minecraft:sparkler_emitter ~ ~0.5 ~"
+      },
+      {
+        "run_command": "playsound random.levelup @s"
+      }
+    ]
+  },
+
+  "lucky:reward_mob_spawn": {
+    "sequence": [
+      {
+        "randomize": [
+          {
+            "weight": 1,
+            "run_command": "summon iron_golem ~ ~ ~"
+          },
+          {
+            "weight": 1,
+            "run_command": "summon wolf ~ ~ ~"
+          },
+          {
+            "weight": 1,
+            "run_command": "summon horse ~ ~ ~"
+          }
+        ]
+      },
+      {
+        "run_command": "particle minecraft:portal ~ ~0.5 ~"
+      },
+      {
+        "run_command": "playsound random.levelup @s"
+      }
+    ]
+  },
+
+  "lucky:reward_explosion": {
+    "sequence": [
+      {
+        "randomize": [
+          {
+            "weight": 1,
+            "run_command": "give @s tnt 5"
+          },
+          {
+            "weight": 1,
+            "run_command": "summon tnt ~ ~ ~"
+          }
+        ]
+      },
+      {
+        "run_command": "particle minecraft:explosion ~ ~0.5 ~"
+      },
+      {
+        "run_command": "playsound random.explode @s"
+      }
+    ]
+  }
+}
