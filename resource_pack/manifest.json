@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Lucky Block Resource Pack - Optimized for Bedrock PC Latest",
+    "name": "Lucky Block Resource Pack",
+    "uuid": "23456789-2345-6789-2345-678923456789",
+    "version": [1, 1, 0],
+    "min_engine_version": [1, 20, 70]
+  },
+  "modules": [
+    {
+      "description": "Lucky Block Resources",
+      "type": "resources",
+      "uuid": "98765432-5432-9876-5432-987654329876",
+      "version": [1, 1, 0]
+    }
+  ]
+}
