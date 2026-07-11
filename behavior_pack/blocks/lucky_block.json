@@ -1,0 +1,69 @@
+{
+  "format_version": [1, 1, 0],
+  "minecraft:block": {
+    "description": {
+      "identifier": "lucky:lucky_block",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:unit_cube": {},
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "lucky_block_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "lucky_block_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "lucky_block_bottom",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destroy_time": 0.5,
+      "minecraft:explosion_resistance": 5,
+      "minecraft:map_color": "#FFD700",
+      "minecraft:light_dampening": 0,
+      "minecraft:block_light_absorption": 0,
+      "minecraft:geometry": "geometry.cube",
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allow_all": true
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:on_step_on": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 15,
+                "trigger": "lucky:reward_diamonds"
+              },
+              {
+                "weight": 12,
+                "trigger": "lucky:reward_enchanted_item"
+              },
+              {
+                "weight": 10,
+                "trigger": "lucky:reward_potion_effect"
+              },
+              {
+                "weight": 8,
+                "trigger": "lucky:reward_mob_spawn"
+              },
+              {
+                "weight": 5,
+                "trigger": "lucky:reward_explosion"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
