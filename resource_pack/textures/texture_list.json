@@ -1,0 +1,14 @@
+{
+  "format_version": "1.16.100",
+  "textures": [
+    {
+      "name": "atlas.blocks",
+      "namespace": "lucky",
+      "textures": [
+        "textures/blocks/lucky_block_top",
+        "textures/blocks/lucky_block_side",
+        "textures/blocks/lucky_block_bottom"
+      ]
+    }
+  ]
+}
