@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Lucky Block Behavior Pack - Optimized for Bedrock PC Latest",
+    "name": "Lucky Block Behavior Pack",
+    "uuid": "12345678-1234-5678-1234-567812345678",
+    "version": [1, 1, 0],
+    "min_engine_version": [1, 20, 70]
+  },
+  "modules": [
+    {
+      "description": "Lucky Block Behaviors",
+      "type": "behavior",
+      "uuid": "87654321-4321-8765-4321-876543218765",
+      "version": [1, 1, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "23456789-2345-6789-2345-678923456789",
+      "version": [1, 1, 0]
+    }
+  ]
+}
