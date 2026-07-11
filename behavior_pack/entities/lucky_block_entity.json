@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.100",
+  "namespace": "lucky",
+  
+  "minecraft:entity": {
+    "description": {
+      "identifier": "lucky:lucky_block_entity",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      }
+    }
+  }
+}
